@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="#" autocomplete="off" onsubmit="return validation()">
+        <div class="form-control">
+          <label for="name">Enter Your Name: </label>
+          <input type="text" id="name" placeholder="Enter Your Name" />
+          <span id="msg-name"></span>
+        </div>
+        <div class="form-control">
+          <label for="email">Enter Your Email: </label>
+          <input type="text" id="email" placeholder="Enter Your Email " />
+          <span id="msg-email"></span>
+        </div>
+        <div class="form-control">
+          <label for="pw">Enter Your Password: </label>
+          <input type="password" id="pw" placeholder="Enter Your Password " />
+          <span id="msg-pw"></span>
+        </div>
+        <div class="form-control">
+          <label for="con-pw">Confirm Your Password: </label>
+          <input
+            type="password"
+            id="con-pw"
+            placeholder="Enter  Password again "
+          />
+          <span id="msg-con-pw"></span>
+        </div>
+        <div class="form-control">
+          <label for="mob">Enter Your Number: </label>
+          <input type="text" id="mob" placeholder="(Exclude Country Code) " />
+          <span id="msg-mob"></span>
+        </div>
+        <!-- <div class="form-control">
+          <label for="gender">Choose Your Gender: </label>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+          <input type="radio" id="others" name="gender" />
+          <label for="others">Others</label>
+        </div> -->
+        <!-- <div class="form-control">
+          <label for="dob">Date Of Birth: </label>
+          <input type="date" id="dob" />
+        </div> -->
+        <!-- <div class="form-control">
+          <label for="course">Select Your Course: </label>
+          <select id="course">
+            <option>Please select one course</option>
+            <option>Web Design</option>
+            <option>Web Development</option>
+            <option>Graphic Design</option>
+            <option>Wordpress</option>
+          </select>
+        </div> -->
+        <!-- <div class="form-control">
+          <label for="file">Upload Your File: </label>
+          <input type="file" id="file" />
+        </div> -->
+
+        <!-- <div class="form-control">
+          <label for="msg">Type Your Message: </label>
+          <textarea id="msg" placeholder="Type Your Message"></textarea>
+        </div> -->
+
+        <div class="form-control btn-group">
+          <!-- <input type="reset" /> -->
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script src="js/form-validation.js"></script>
+  </body>
+</html>
